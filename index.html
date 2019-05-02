@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <div class="form-container">
+    <p id="description">Take this survey and let us know more about your reading habits.</p>
+    <form id="survey-form" action="index.html" method="post">
+      <div class="row">
+        <label for="name" id="name-label">* Name</label><input type="text" name="name" id="name" placeholder="Enter your name" class="resp" required>
+      </div>
+      <div class="row">
+        <label for="email" id="email-label">* E-mail</label><input type="email" name="email" id="email" placeholder="Enter your e-mail" class="resp" required>
+      </div>
+      <div class="row">
+        <label for="age" id="number-label">* Age</label><input type="number" name="age" id="number" placeholder="Your age" min="1" max="100" class="resp" required>
+      </div>
+      <div class="row">
+        <label for="select">What do you do for a living? </label>
+      </div>
+      <div class="row">
+        <select class="select" name="select" id="dropdown" placeholder="Choose one">
+          <option disabled value="select">Choose one</option>
+          <option value="employed">Employed</option>
+          <option value="self-employed">Self-employed</option>
+          <option value="unemployed">Unemployed</option>
+          <option value="student">Student</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="row">
+        <label for="habits">How many hours a week do you spend reading? </label>
+        <div class="row">
+          <input type="radio" name="option" value="0-3"><label for="option1">0 - 3</label>
+        </div>
+        <div class="row">
+          <input type="radio" name="option" value="3-10"><label for="option1">3 -10</label>
+        </div>
+        <div class="row">
+          <input type="radio" name="option" value="10+"><label for="option1">10 +</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row">
+          <label for="">Average of books you read in a year: </label>
+        </div>
+        <div class="row">
+          <select class="select" name="number-of-books">
+            <option value="0-5">0 - 5</option>
+            <option value="5-15">5 - 15</option>
+            <option value="15-30">15 - 30</option>
+            <option value="30+">30 +</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row">
+          <label for="">What do you usually read? </label>
+        </div>
+        <div class="row">
+          <div class="row">
+            <input type="checkbox" name="genre" value="fiction"><label for="fiction">Fiction</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" name="genre" value="non-fiction"><label for="non-fiction">Non fiction</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" name="genre" value="biography"><label for="biography">Biography</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" name="genreh" value="scientific-research"><label for="scientific-research">Scientific / Research</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" name="genre" value="novels"><label for="novels">Novels</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" name="genre" value="short-stories"><label for="short-stories">Short stories</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" name="genre" value="poetry"><label for="poetry">Poetry</label>
+          </div>
+        </div>
+      </div>
+      <div class="row comments">
+        <label for="comments" class="label-t-a">Any comments? </label>
+      </div>
+      <div class="row">
+        <textarea name="name" rows="10" cols="45" class="t-a"></textarea>
+      </div>
+
+
+      <div class="row">
+        <button type="submit" name="button" id="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
